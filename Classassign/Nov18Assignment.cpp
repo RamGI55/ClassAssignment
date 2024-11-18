@@ -1,9 +1,11 @@
+// BASIC 1vs1 TURN BASE RPG ENGINE // 
 #include <iostream>
 
 using namespace std; 
 
 bool killed = false; 
 int playerselect;
+int playerinput; 
 
 enum class job
 {
@@ -17,6 +19,7 @@ struct Character
 	job job;
 	int health = 0 ;
 	int attack = 0;
+	int def = 0; 
 } p1, p2;
 
 string GetName(job& j)
@@ -52,21 +55,47 @@ void levelUp(Character& c)
 }
 /* 
 Attack mechanism, player a attacks player 2.
-press attack > ch 1 attacks c2 > shows remain health and damage gave.
+press attack > ch 1 attacks c2 > shows remain health and damage gave. Currently - attack button is enter. 
+
 
 */
 int Attack(Character& c1, Character& c2)
 {
+	// char << use the pointers 
+	// string 
+	cout << " Fight begin!, Kill " << c2.name << "!! " << endl;
 	while (c2.health > 0)
-	{ 
-	if (cin.get());
 	{
-		c2.health = c2.health - c1.attack;
-		cout << c1.name << " " << c1.health << endl;
-		cout << c2.name << " " << c2.health << endl;
+		// RANDOM COUNT THE ATTACK ACCURANCY SNIPER - 80, M4 - 65, SMG - 55, SHOTGUN - 50 (Tier 2) // 
+		 
+		cin >> playerinput;
+		switch (playerinput)
+		{
+			// a - attack, s- defen, d- run 
+		case 1:
+			c2.health = c2.health - c1.attack;
+			cout << c1.name << "  ======================== >> " << c2.name << endl;
+			cout << c1.name << " " << c1.health << endl;
+			cout << c2.name << " " << c2.health << endl;
+			break;
+		case 2:
+			c1.health = c1.health - (c2.attack * (1 * (1 - (c1.def / 100))));
+			cout << c1.name << "  << ========================  " << c2.name << endl;
+			cout << c1.name << " " << c1.health << endl;
+			cout << c2.name << " " << c2.health << endl;
+			break;
+			// ATTACK, DEFENCE, RUN Mechanism (Tier 2) //
+		case 3:
+			c1.health = c1.health - (c2.attack * (1));
+			cout << c1.name << "  << ========================  " << c2.name << endl;
+			cout << c1.name << " " << c1.health << endl;
+			cout << c2.name << " " << c2.health << endl;
+			break;
+		default: 
+			cout << "Please push the right button" << endl; 
+			break;
 
-	}
-
+		}
 	}
 	killed++;
 	return 0; 
@@ -84,8 +113,8 @@ Player console
 */
 int main()
 {	
-	Character p1 = { "Jane Doe", 1 , job::Rush, 150 , 15 };
-	Character p2 = { "Aru Rikuhachima" , 1 , job::Sniper, 150 , 20}; 
+	Character p1 = { "Jane Doe", 1 , job::Rush, 150 , 15 , 7};
+	Character p2 = { "Aru Rikuhachima" , 1 , job::Sniper, 150 , 20, 5}; 
 	
 
 
