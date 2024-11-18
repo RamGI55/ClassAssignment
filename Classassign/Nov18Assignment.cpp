@@ -2,7 +2,7 @@
 
 using namespace std; 
 
-bool gamover = false; 
+bool killed = false; 
 int playerselect;
 
 enum class job
@@ -35,13 +35,19 @@ string GetName(job& j)
 }
 /*
 Player level goes up once player reach the certain level of exp
-
+killed = if character killed opponent. 
+c.level = raise the level + 1 to target character
 
 */
 void levelUp(Character& c)
 {
 	// level up feature 
-	
+	if (killed=true)
+	{
+		c.level++;
+		cout << "level up! " << endl;
+		cout << " Level : " << c.level << endl;
+	}
 
 }
 /* 
@@ -51,16 +57,19 @@ press attack > ch 1 attacks c2 > shows remain health and damage gave.
 */
 int Attack(Character& c1, Character& c2)
 {
-	
+	while (c2.health > 0)
+	{ 
 	if (cin.get());
 	{
 		c2.health = c2.health - c1.attack;
-		cout << c1.health;
-		cout << c2.health;
+		cout << c1.name << " " << c1.health << endl;
+		cout << c2.name << " " << c2.health << endl;
 
 	}
-	
-	
+
+	}
+	killed++;
+	return 0; 
 }
 
 /* 
@@ -85,28 +94,31 @@ int main()
 	{
 		cout << "Game start" << endl; 
 
-		cout << "Press select the character." << endl;
-		cout << "플레이어 1 : " << p1.name << " 레벨 :" << p1.level << "직업 : " << GetName(p1.job) << endl;
-		cout << "플레이어 2 : " << p2.name << " 레벨 :" << p2.level << "직업 : " << GetName(p2.job) << endl;
+		//cout << "Press select the character." << endl;
+		//cout << "플레이어 1 : " << p1.name << " 레벨 :" << p1.level << "직업 : " << GetName(p1.job) << endl;
+		//cout << "플레이어 2 : " << p2.name << " 레벨 :" << p2.level << "직업 : " << GetName(p2.job) << endl;
 
-		cin >> playerselect; 
-		switch (playerselect)
-		{
-		case 1:
-			cout << "You selected " << p1.name;
-			Attack(p1.attack, p2.attack);
+		//cin >> playerselect; 
+		//switch (playerselect)
+		//{
+		//case 1:
+		//	cout << "You selected " << p1.name;
+		//	Attack(p1.attack, p2.attack)
+		//	break;
+		//case 2:
+		//	cout << "You selected " << p2.name;
+		//	Attack(p2.attack, p1.attack);
+		//	break;
+		//default:
+		//	cout << "invalid choice"; 
+
+ 	//	}
+
+		cout << "press enter to shoot Aru " << endl;
+		Attack(p1, p2);
+		levelUp(p1);
+
 		
-			break;
-		case 2:
-			cout << "You selected " << p2.name;
-			Attack(p2.attack, p1.attack);
-			break;
-		default:
-			cout << "invalid choice"; 
-
- 		}
-
-
 
 	}
 	
