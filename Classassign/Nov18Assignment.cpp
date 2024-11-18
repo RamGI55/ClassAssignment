@@ -94,29 +94,28 @@ int main()
 	{
 		cout << "Game start" << endl; 
 
-		//cout << "Press select the character." << endl;
-		//cout << "플레이어 1 : " << p1.name << " 레벨 :" << p1.level << "직업 : " << GetName(p1.job) << endl;
-		//cout << "플레이어 2 : " << p2.name << " 레벨 :" << p2.level << "직업 : " << GetName(p2.job) << endl;
+		cout << "Press select the character." << endl;
+		cout << "플레이어 1 : " << p1.name << " 레벨 :" << p1.level << "직업 : " << GetName(p1.job) << endl;
+		cout << "플레이어 2 : " << p2.name << " 레벨 :" << p2.level << "직업 : " << GetName(p2.job) << endl;
 
-		//cin >> playerselect; 
-		//switch (playerselect)
-		//{
-		//case 1:
-		//	cout << "You selected " << p1.name;
-		//	Attack(p1.attack, p2.attack)
-		//	break;
-		//case 2:
-		//	cout << "You selected " << p2.name;
-		//	Attack(p2.attack, p1.attack);
-		//	break;
-		//default:
-		//	cout << "invalid choice"; 
+		cin >> playerselect; 
+		switch (playerselect)
+		{
+		case 1:
+			cout << "You selected " << p1.name;
+			Attack(p1, p2);
+			levelUp(p1);
+			break;
+		case 2:
+			cout << "You selected " << p2.name;
+			Attack(p2, p1);
+			levelUp(p2);
+			break;
+		default:
+			cout << "invalid choice"; 
 
- 	//	}
+ 		}
 
-		cout << "press enter to shoot Aru " << endl;
-		Attack(p1, p2);
-		levelUp(p1);
 
 		
 
