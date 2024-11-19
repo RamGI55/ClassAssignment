@@ -16,6 +16,9 @@
     <Filter Include="Source Files\Nov18Note">
       <UniqueIdentifier>{204bfd38-196e-43f2-a32f-c9f760ce4ccc}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Nov19">
+      <UniqueIdentifier>{dc3aee0f-98aa-461e-bc81-68eb949e0192}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Nov18Assignment.cpp">
@@ -23,6 +26,21 @@
     </ClCompile>
     <ClCompile Include="string.cpp">
       <Filter>Source Files\Nov18Note</Filter>
+    </ClCompile>
+    <ClCompile Include="Nov19Note.cpp">
+      <Filter>Source Files\Nov19</Filter>
+    </ClCompile>
+    <ClCompile Include="Note2.cpp">
+      <Filter>Source Files\Nov19</Filter>
+    </ClCompile>
+    <ClCompile Include="Note3.cpp">
+      <Filter>Source Files\Nov19</Filter>
+    </ClCompile>
+    <ClCompile Include="Nov19Assignment.cpp">
+      <Filter>Source Files\Nov19</Filter>
+    </ClCompile>
+    <ClCompile Include="Note4.cpp">
+      <Filter>Source Files\Nov19</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
