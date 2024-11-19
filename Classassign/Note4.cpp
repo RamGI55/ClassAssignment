@@ -14,7 +14,7 @@ private:
 
 lstudent::lstudent(int size)
 {
-	data = new int[size]; 
+	data = new int[size];
 	cout << "Generator" << endl;
 }
 
