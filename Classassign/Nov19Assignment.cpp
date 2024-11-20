@@ -9,6 +9,21 @@
 //
 using namespace std; 
 
+/*
+*
+Class student - contains student's information and print out the sutdent's info in UI.
+	void print detail - shows student's information to UI.
+
+// ========= personal information, non-combat related ============= // 
+sName - Student's Name 
+DOB - Date of birth
+favroite - studnet's faveroite things
+
+// ========= combat stats information, combat mech related ============= //
+sAtk - student's attack stats (int) - TODO offece mechanism calculation 
+sDef - student's defend stats (int) - TODO defence mechanism calculation 
+*/
+
 class student
 {
 public:
@@ -46,5 +61,6 @@ int main()
 
 	return 0;
 	delete n;
+	n = nullptr; 
 	
 }
