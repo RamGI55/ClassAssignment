@@ -4,10 +4,11 @@
 
 // OOP 발표자료 
 #include <iostream>
-
-// ======== Class SECTION =============== // 
-
+//
+//// ======== Class SECTION =============== // 
+//
 using namespace std; 
+
 class student
 {
 public:
@@ -22,12 +23,28 @@ public:
 	{
 
 	}
+	void printDetail() const
+	{
+		cout << "Name : " << sName << endl; 
+		cout << "DOB : " << DOB << endl;
+		cout << "Favroite Thing : " << favroite << endl;
+		cout << endl; 
+		cout << "Battle Details" << endl; 
+		cout << "ATK :  " << sAtk << endl;
+		cout << "DEF : " << sDef << endl;
+
+
+	}
+	
 
 };
 
 int main()
 {
 	student* n = new student("Koharu", 36, 6, "APR - 16 - 2002", "Think 'Something'");
-	
+	n->printDetail(); 
+
+	return 0;
+	delete n;
 	
 }
