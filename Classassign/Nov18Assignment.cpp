@@ -7,6 +7,9 @@ bool killed = false;
 int playerselect;
 int playerinput; 
 
+
+class fight 
+
 enum class job
 {
 	Sniper, Assult, Rush, Rat

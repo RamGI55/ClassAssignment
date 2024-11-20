@@ -19,6 +19,9 @@
     <Filter Include="Source Files\Nov19">
       <UniqueIdentifier>{dc3aee0f-98aa-461e-bc81-68eb949e0192}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Nov20">
+      <UniqueIdentifier>{f40456b9-b115-4f62-bbc5-81d4d731d4ff}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Nov18Assignment.cpp">
@@ -41,6 +44,15 @@
     </ClCompile>
     <ClCompile Include="Note4.cpp">
       <Filter>Source Files\Nov19</Filter>
+    </ClCompile>
+    <ClCompile Include="Nov20_Note1.cpp">
+      <Filter>Source Files\Nov20</Filter>
+    </ClCompile>
+    <ClCompile Include="Nov20_Note2.cpp">
+      <Filter>Source Files\Nov20</Filter>
+    </ClCompile>
+    <ClCompile Include="Nov20Assignment.cpp">
+      <Filter>Source Files\Nov20</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
