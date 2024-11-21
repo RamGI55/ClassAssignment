@@ -5,14 +5,12 @@
 /// </summary>
 
 int bingoNumber[5][5];
-int markedNumber[5][5];
 int playerCallout;
 
 int verticalVerif;
 int horizontalVerif;
 int rightDiagVerif;
-int leftDiagVerif;
-int bingocount; 
+int leftDiagVerif; 
 
 int i; 
 int j;
@@ -90,7 +88,6 @@ void marker(const int(&bingoNumber[5][5]),int playerCallout)
 			cout << endl;
 
 		}
-		Gamecount++;
 	
 
 
@@ -122,9 +119,9 @@ void IsBingo (const int(&bingoNumber[5][5]), int bingocount)
 
 		}
 
-		/*if (bingoNumber[0][0] == 0 && bingoNumber[1][1] == 0 && bingoNumber[2][2] == 0 && bingoNumber[3][3] == 0 && bingoNumber[4][4] == 0)
+		if (bingoNumber[0][0] == 0 && bingoNumber[1][1] == 0 && bingoNumber[2][2] == 0 && bingoNumber[3][3] == 0 && bingoNumber[4][4] == 0)
 		{
-			rightDiagVerif++;
+			bingocount++;
 
 		}
 		rightDiagVerif = 0;
@@ -132,158 +129,48 @@ void IsBingo (const int(&bingoNumber[5][5]), int bingocount)
 
 		if (bingoNumber[0][4] == 0 && bingoNumber[1][3] == 0 && bingoNumber[2][2] == 0 && bingoNumber[3][1] == 0 && bingoNumber[4][0] == 0)
 		{
-			leftDiagVerif++;
+			bingocount++;
 
-		}*/
-		leftDiagVerif = 0;
+		}
+		
 
 		cout << "Your Total Bingos : " << bingocount << endl;
 
 };
 
-BfSuffle(player);
-Suffle(player); 
+
 
 using namespace std; 
 int main()
 {	
-	int Gamecount = 0; // int count 
-	// UI UX FLOW // 
-	int counter = 1; 
 	
-	for (int i = 0; i < 5; i++)
-	{
-		for (int j = 0; j < 5; j++)
-		{
-			bingoNumber[i][j] = counter ++;
-		}
-	}
+	int player[5][5];
+	BfSuffle(player);
+	Suffle(player); 
+	int pBingoCount = 0;
+	
 
 
 	cout << "========= 5X5 BINGO GAME =========== " << endl;
-	int player[5][5]; 
 	
 	
-		
+		for (int = 0; i < 25 ; i ++)
+		{
+			printScreen(player);
 
-		int pBingoCount = 0;
+			if (pBingoCount >= 3)
+			{
+				break;
+			}
 
-		if (pBingoCount = 3) break;
+			cout << "Please Select The Number: " << endl;
+			cin >> pCallout;
 
-	
-		printScreen(player);
+			marker(player, pCallout);
 
-		cout << "Please Select The Number: " << endl;
-		cin >> pCallout;
+			IsBingo(player, pBingoCount);
 
-		marker(player, pCallout);
-
-		IsBingo(player, pBingoCount);
-
-	
-	//// ===== print random 5x5 bingo ===== // 
-	//int dest, sour, temp;
-	//for (int a = 0; a < 200; a++)
-	//{	
-	//	
-	//	dest = rand() % 5; 
-	//	sour = rand() % 5; 
-	//	temp = bingoNumber[sour][dest];
-	//	bingoNumber[sour][dest] = bingoNumber[dest][sour];
-	//	bingoNumber[dest][sour] = temp;
-	//
-	//}
-	//// BUG :: FIRST TWO NUMBERS AREN'T SUFFLED. 
-
-	//for (int i = 0; i < 5; i++)
-	//{
-	//	for (int j = 0; j < 5; j++)
-	//	{
-	//		/*markedNumber[i][j] = calloutedNumber[i][j];*/
-	//		cout << bingoNumber[i][j] << "\t";
-	//	}
-	//	cout << endl;
-	//}
-
-	//int count = 0; 
-	//while ( count  < 6 )
-	//{ 
-
-	//	cout << "Please Select The Number; " << endl; 
-	//	cin >> playerCallout;
-
-	//	for (int i = 0; i < 5; i++)
-	//	{
-	//		for (int j = 0; j < 5; j++)
-	//		{
-	//			if (bingoNumber[i][j] == playerCallout)
-	//
-	//				bingoNumber[i][j] = 0; 
-	//		}
-
-	//	}
-	//	for (int i = 0; i < 5; i++) {
-	//		for (int j = 0; j < 5; j++) {
-	//			if (bingoNumber[i][j] == 36) cout << (char)bingoNumber[i][j] ; // TODO : Change to the #. 
-	//			else cout << bingoNumber[i][j] << "\t";
-
-	//		}
-
-	//		cout << endl;
-
-	//	}
-	//
-	//	for (int i = 0; i < 5; i++) 
-	//	{
-	//		horizontalVerif = 0;
-
-	//		for (int j = 0; j < 5; j++)
-	//		{
-	//			if (bingoNumber[i][j] == 0)
-	//			{
-	//				horizontalVerif++;
-	//			}
-	//			
-	//			
-	//		}
-	//		if (horizontalVerif == 5)
-	//		{
-	//			
-	//			bingocount++;
-	//		}
-	//		 
-	//		
-	//	}
-
-	//	/*if (bingoNumber[0][0] == 0 && bingoNumber[1][1] == 0 && bingoNumber[2][2] == 0 && bingoNumber[3][3] == 0 && bingoNumber[4][4] == 0)
-	//	{
-	//		rightDiagVerif++;
-	//		
-	//	}
-	//	rightDiagVerif = 0;
-
-
-	//	if (bingoNumber[0][4] == 0 && bingoNumber[1][3] == 0 && bingoNumber[2][2] == 0 && bingoNumber[3][1] == 0 && bingoNumber[4][0] == 0)
-	//	{
-	//		leftDiagVerif++;
-	//		
-	//	}*/
-	//	leftDiagVerif = 0;
-
-	//	cout << "Your Total Bingos : " << bingocount << endl;
-
-	//count++; 
-	//}
-	////for (i=0; i < 5 ; i ++ )
-	////	for (j = 0; j < 5; j++)
-	////	{
-	////		if (bingoNumber[i][j] == 0)
-
-
-
-	////	}
-
-	//
-	//return 0;
-
+			
+		}
+		return 0; 
 }
