@@ -4,16 +4,7 @@
 ///  SINGLEPLAYER - Tier 1 
 /// </summary>
 
-int bingoNumber[5][5];
-int playerCallout;
-
 int verticalVerif;
-int horizontalVerif;
-int rightDiagVerif;
-int leftDiagVerif; 
-
-int i; 
-int j;
 int gameOver; 
 
 void BfSuffle(int(&bingoNumber[5][5])
@@ -95,7 +86,9 @@ void marker(const int(&bingoNumber[5][5]),int playerCallout)
 
 void IsBingo (const int(&bingoNumber[5][5]), int bingocount)
 {
-
+	int horizontalVerif;
+	int rightDiagVerif;
+	int leftDiagVerif;
 
 		for (int i = 0; i < 5; i++)
 		{
@@ -124,7 +117,7 @@ void IsBingo (const int(&bingoNumber[5][5]), int bingocount)
 			bingocount++;
 
 		}
-		rightDiagVerif = 0;
+		
 
 
 		if (bingoNumber[0][4] == 0 && bingoNumber[1][3] == 0 && bingoNumber[2][2] == 0 && bingoNumber[3][1] == 0 && bingoNumber[4][0] == 0)
@@ -153,8 +146,8 @@ int main()
 
 	cout << "========= 5X5 BINGO GAME =========== " << endl;
 	
-	
-		for (int = 0; i < 25 ; i ++)
+	// TODO:: Make the loops work, check in the debug which illegal code stops to procced. 
+		for (int i = 0; i < 25 ; i ++)
 		{
 			printScreen(player);
 
