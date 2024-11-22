@@ -16,6 +16,12 @@
     <Filter Include="Source Files\Item">
       <UniqueIdentifier>{d9d89525-c0a6-4a08-85e0-d57abc17c91c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Inventory">
+      <UniqueIdentifier>{2985319e-9c77-49d9-8db1-70fc5c4034f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Store">
+      <UniqueIdentifier>{da555a30-f2d5-4fd8-ad31-96dcc5ddb9e7}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="PrintDebuging.cpp">
@@ -27,6 +33,12 @@
     <ClCompile Include="ItemList.cpp">
       <Filter>Source Files\Item</Filter>
     </ClCompile>
+    <ClCompile Include="Inventory.cpp">
+      <Filter>Source Files\Inventory</Filter>
+    </ClCompile>
+    <ClCompile Include="Store.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Item.h">
@@ -36,6 +48,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="header.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Inventory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Store.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

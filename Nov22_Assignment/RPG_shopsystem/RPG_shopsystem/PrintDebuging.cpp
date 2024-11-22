@@ -12,5 +12,13 @@ int main()
 	delete i;
 	i = nullptr;
 
+	vector<Item*> Inventory;
+	Inventory.push_back(new Item(1, "Strange Long Sword", 1, 1, 1, 3000, "Strange form of the Sword, look like koharu doesn't like it."));
 
+	for (auto p : Inventory)
+	{
+		delete p; 
+
+	}
+	
 }

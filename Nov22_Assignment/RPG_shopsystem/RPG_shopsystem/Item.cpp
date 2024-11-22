@@ -11,7 +11,39 @@ Item::~Item()
 }
 
 // ======== UI ============ // 
+int Item::getId()
+{
+	return 0;
+}
+string Item::getName()
+{
+	return name;
+}
 
+int Item::getType()
+{
+	return 0;
+}
+
+int Item::getQuan()
+{
+	return 0;
+}
+
+int Item::getParts()
+{
+	return 0;
+}
+
+int Item::getPrice()
+{
+	return 0;
+
+}
+string Item::getDescription()
+{
+	return description;
+}
 
 int Item::printData()
 {
@@ -21,10 +53,3 @@ int Item::printData()
  
 
 // ======== UI ============ // 
-
-
-
-int Item::getId()
-{
-	return 0;
-}

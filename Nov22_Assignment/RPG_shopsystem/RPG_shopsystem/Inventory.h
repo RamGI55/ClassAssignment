@@ -1,26 +1,24 @@
 #pragma once
 #include "item.h"
 
+using namespace std;
 class Inventory
 {
 private: 
-	Item* itemarray;
-	unsigned int numbofItems;
-	
-
-	void initialise();
-	void clearinventory();
-	void deletememory(); 
-	void capacity(int n); 
 
 public: 
-	void showinvetory();
-	Inventory(); 
+	Inventory();
+	~Inventory();
 
-	virtual ~Inventory(); 
+	int maxInven();
+	int currentInven();
+	Item* Item(); 
+	int printInven();
 
 
 
 
 };
+
+
 
