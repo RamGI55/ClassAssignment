@@ -6,31 +6,31 @@ class Item
 private: 
 	int id; 
 	string name;
-	string type; 
+	int type; 
 	bool stackable; 
 	int stacksize;
 	int quantity;
 	int maxquantity;
 	int parts; 
 	int itemPrice; 
-	string discription; 
+	string description; 
 
 
 public: 
-	int getID(); 
-	const char* getName();
-	int getType();
-	int getquantity();
-	int getmaxquantity();
-	int getparts();
-	int getitemPrice();
-	string getDiscription();
-	int print();
-	 
-	Item(int id, const char* Name, int type,
-		int quantity, int parts, int itemPrice);
+	Item(int id, string name, int type, int quantity, int parts, int itemPrice, string description);
+	~Item();
 
-	virtual~Item(); 
+	int getId();
+	string getName();
+	int getType();
+	int getQuan();
+	int getParts();
+	int getPrice();
+	string getDescription();
+	int printData();
+
+	
+	
  
 };
 

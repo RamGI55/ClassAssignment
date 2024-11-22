@@ -5,13 +5,12 @@
 using namespace std; 
 int main()
 {
+	Item* i = new Item(1, "Strange Long Sword", 1, 1, 1, 3000, "Strange form of the Sword, look like koharu doesn't like it.");
+	i->printData();
 
-	Item* i = new Item( 1, "Strange Long Sword", 1, 1, 1, 2500);
-	i->print();
-
-	delete i;
 	return 0;
-	
+	delete i;
+	i = nullptr;
 
 
 }
