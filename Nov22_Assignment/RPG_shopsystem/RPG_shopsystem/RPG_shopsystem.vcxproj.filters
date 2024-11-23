@@ -37,7 +37,7 @@
       <Filter>Source Files\Inventory</Filter>
     </ClCompile>
     <ClCompile Include="Store.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Store</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

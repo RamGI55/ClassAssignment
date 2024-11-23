@@ -5,20 +5,12 @@
 
 namespace ItemList
 {
-	enum id
-	{
-		i1,
-		i2,
-		i3,
-		i4
-
-	};
 
 	enum type
 	{
 		Consumerable,
 		Weapon,
-		Armor
+		Armor,
 
 	};
 
@@ -29,13 +21,11 @@ namespace ItemList
 		upperbody,
 		lowerbody,
 		head,
-		feet
-
-
+		feet,
 	};
 
 
-};
+}
 
 #endif
 

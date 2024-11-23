@@ -1,13 +1,23 @@
 #pragma once
+#include "Item.h"
+#include "header.h"
 class Store
 {
 private:
 
+	vector<Item>items;
+	
+	void exchangeMech();
+
 public: 
 	Store();
 	~Store();
+	
+	bool pullItem();
+	bool pushItem(); 
 
-	void exchangeMech();
+	int masterUIshop();
+	void itemListshop();
 
 };
 

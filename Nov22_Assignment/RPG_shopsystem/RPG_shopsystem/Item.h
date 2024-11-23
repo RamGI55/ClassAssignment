@@ -19,7 +19,8 @@ private:
 public: 
 	Item(int id, string name, int type, int quantity, int parts, int itemPrice, string description);
 	~Item();
-
+	
+	// Getters 
 	int getId();
 	string getName();
 	int getType();
@@ -29,7 +30,11 @@ public:
 	string getDescription();
 	int printData();
 
-	
+	//Setters 
+	void setCount(int count);
+
+	void addOne();
+	void removeOne(); 
 	
  
 };
