@@ -48,8 +48,18 @@ int Store::masterUIshop()
 		{
 		case 1: 
 			
-			itemListshop();
 			
+			itemListshop();
+			cout << "Please select the item number to buy :"; 
+			cin >> number; 
+			if (number < 4)
+			{
+				cout << "Please Enter the right number";
+			}
+			else
+			{
+				cout << "Thanks to buying " << endl;
+			}
 			return 1; 
 
 			break;
