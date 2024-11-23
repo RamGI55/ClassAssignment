@@ -21,13 +21,13 @@ public:
 	~Item();
 	
 	// Getters 
-	int getId();
-	string getName();
-	int getType();
-	int getQuan();
-	int getParts();
-	int getPrice();
-	string getDescription();
+	int getId() const;
+	string getName() const;
+	int getType() const;
+	int getQuan() const;
+	int getParts() const;
+	int getPrice() const;
+	string getDescription() const;
 	int printData();
 
 	//Setters 
@@ -36,6 +36,7 @@ public:
 	void addOne();
 	void removeOne(); 
 	
+	friend ostream& operator<<(ostream& os, const Item& item);
  
 };
 

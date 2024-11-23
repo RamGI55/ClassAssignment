@@ -96,11 +96,9 @@ void Store::itemListshop()
 		cout << "Available Items in the Store:" << endl;
 		cout << "----------------------------------------" << endl;
 
-		for (vector<Item>::const_iterator it = items.begin(); it != items.end(); ++it)
-		{
-			cout << *it << endl;
+		for (const auto& item : items) {
+			cout << item << endl; 
 		}
-	
 	
 }
 

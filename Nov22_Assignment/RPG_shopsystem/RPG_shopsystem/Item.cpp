@@ -15,49 +15,46 @@ Item::~Item()
 
 
 // ======== UI ============ // 
-int Item::getId()
+int Item::getId() const
 {
 	return id; 
 }
-string Item::getName()
+string Item::getName() const
 {
 	return name;
 }
 
-int Item::getType()
+int Item::getType()const
 {
 	return type;
 	
 }
 
-int Item::getQuan()
+int Item::getQuan() const
 {
 	return quantity;
 	 
 }
 
-int Item::getParts()
+int Item::getParts()const
 {
 	return parts;
 	
 }
 
-int Item::getPrice()
+int Item::getPrice()const
 {
 	return itemPrice;
 	 
 
 }
-string Item::getDescription()
+string Item::getDescription()const
 {
 	return description;
 	 
 }
 
-int Item::printData() // deburg 
-{
-	cout << name << " - " << itemPrice << "G  :" << description << endl;
-}
+
  
 
 // ======== UI ============ // 
@@ -68,4 +65,14 @@ void Item::addOne()
 void Item::removeOne()
 {
 
+}
+
+ostream& operator<<(ostream& os, const Item& item)
+{
+	os << "ID: " << item.getId() << "\n"
+		<< "Name: " << item.getName() << "\n"
+		<< "Price: " << item.getPrice() << " G\n"
+		<< "Description: " << item.getDescription() << "\n"
+		<< "----------------------------------------";
+	return os;
 }
