@@ -2,6 +2,8 @@
 #include "Item.h"
 #include "Store.h"
 #include "Inventory.h"
+#include <vector> 
+#include <string> 
 
 // Debuging purpose only 
 
@@ -19,9 +21,10 @@ int main()
 	// Main master UI // 
 	cout << "What do you want to do?, Please enter the number." << endl; 
 	cout << " =============================================== " << endl; 
-	cout << " 1. Going to the store. " << endl;
-	cout << " 2. Looking for the inventory." << endl; 
-	cout << " 3. Heading out to the dungeon. " << endl; 
+	cout << " 1. Store. " << endl;
+	cout << " 2. Inventory." << endl; 
+	cout << " 3. Player Status." << endl; 
+	cout << " 4. Go to Dungeon. " << endl; 
 	cout << endl; 
 	int number; 
 	cin >> number;
@@ -51,6 +54,13 @@ int main()
 		}
 	case 3:
 		{
+			cout << "Check your status.." << endl;
+			cout << endl;
+			break;
+			
+		}
+	case 4: 
+		{ 
 			cout << "Going out to the dungeon..." << endl;
 			cout << endl;
 			break;

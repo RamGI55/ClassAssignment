@@ -42,9 +42,11 @@ int Inventory::masterUIinven()
 {
 	cout << "Please choose the items. " << endl; 
 	cout << "Press 'E' to exit. " << endl; 
-
 	// print the invenotry list. 
 	listInven();
+	int number;
+	cout << "Press the number of the item : "; 
+	cin >> number; 
 
 	return 0; 
 }

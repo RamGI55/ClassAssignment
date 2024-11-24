@@ -67,6 +67,7 @@ void Item::removeOne()
 
 }
 
+v
 ostream& operator<<(ostream& os, const Item& item)
 {
 	os << "ID: " << item.getId() << "\n"
