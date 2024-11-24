@@ -1,6 +1,9 @@
 #include "Inventory.h"
+#include "Item.h"
 #include <vector>
 #include <iostream>
+
+
 
 Inventory::Inventory()
 {
@@ -25,7 +28,23 @@ int Inventory::currentInven()
 	
 }
 
-int Inventory::printInven()
+void Inventory::listInven()
 {
+	vector<Item>inven;
+		
+	// here is the storage of the item the player brought. 
+	cout << "inventory test" << endl; 
+
+
+}
+
+int Inventory::masterUIinven()
+{
+	cout << "Please choose the items. " << endl; 
+	cout << "Press 'E' to exit. " << endl; 
+
+	// print the invenotry list. 
+	listInven();
+
 	return 0; 
 }

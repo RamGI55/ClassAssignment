@@ -1,10 +1,12 @@
 #pragma once
-#include "item.h"
+#include "Item.h"
 
 using namespace std;
 class Inventory
 {
 private: 
+	Item* item();
+	vector<Item>inven;
 
 public: 
 	Inventory();
@@ -12,8 +14,9 @@ public:
 
 	int maxInven();
 	int currentInven();
-	Item* Item(); 
-	int printInven();
+	void listInven();
+	
+	int masterUIinven();
 
 
 
