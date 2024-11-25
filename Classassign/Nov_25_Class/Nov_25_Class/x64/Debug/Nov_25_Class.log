@@ -1,0 +1,71 @@
+﻿  GameEnums.cpp
+C:\Users\user\source\repos\Nov_25_Class\Nov_25_Class\GameEnums.cpp(1,10): error C2001: 상수에 줄 바꿈 문자가 있습니다.
+  Inventory.cpp
+C:\Users\user\source\repos\Nov_25_Class\Nov_25_Class\Inventory.cpp(42,25): error C2059: 구문 오류: '['
+C:\Users\user\source\repos\Nov_25_Class\Nov_25_Class\Inventory.cpp(44,6): error C2039: 'price': 'std::vector<Item,std::allocator<Item>>'의 멤버가 아닙니다.
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\vector(429,7):
+      'std::vector<Item,std::allocator<Item>>' 선언을 참조하십시오.
+  
+C:\Users\user\source\repos\Nov_25_Class\Nov_25_Class\Inventory.cpp(44,14): error C2039: 'soldItem': 'std::vector<Item,std::allocator<Item>>'의 멤버가 아닙니다.
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\vector(429,7):
+      'std::vector<Item,std::allocator<Item>>' 선언을 참조하십시오.
+  
+C:\Users\user\source\repos\Nov_25_Class\Nov_25_Class\Inventory.cpp(44,23): error C2039: 'GetPrice': 'std::vector<Item,std::allocator<Item>>'의 멤버가 아닙니다.
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\vector(429,7):
+      'std::vector<Item,std::allocator<Item>>' 선언을 참조하십시오.
+  
+C:\Users\user\source\repos\Nov_25_Class\Nov_25_Class\Inventory.cpp(59,12): error C2039: 'GetType': 'std::vector<Item,std::allocator<Item>>'의 멤버가 아닙니다.
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\vector(429,7):
+      'std::vector<Item,std::allocator<Item>>' 선언을 참조하십시오.
+  
+C:\Users\user\source\repos\Nov_25_Class\Nov_25_Class\Inventory.cpp(59,23): error C2059: 구문 오류: '=='
+C:\Users\user\source\repos\Nov_25_Class\Nov_25_Class\Inventory.cpp(59,58): error C2059: 구문 오류: ')'
+C:\Users\user\source\repos\Nov_25_Class\Nov_25_Class\Inventory.cpp(60,2): error C2143: 구문 오류: ';'이(가) '{' 앞에 없습니다.
+C:\Users\user\source\repos\Nov_25_Class\Nov_25_Class\Inventory.cpp(61,3): error C2679: 이항 '=': 오른쪽 피연산자로 'std::vector<Item,std::allocator<Item>>' 형식을 사용하는 연산자가 없거나 허용되는 변환이 없습니다.
+      C:\Users\user\source\repos\Nov_25_Class\Nov_25_Class\Item.h(28,1):
+      'Item &Item::operator =(Item &&)'일 수 있습니다.
+          C:\Users\user\source\repos\Nov_25_Class\Nov_25_Class\Inventory.cpp(61,3):
+          'Item &Item::operator =(Item &&)': 인수 2을(를) 'std::vector<Item,std::allocator<Item>>'에서 'Item &&'(으)로 변환할 수 없습니다.
+              C:\Users\user\source\repos\Nov_25_Class\Nov_25_Class\Inventory.cpp(61,17):
+              원인: 'std::vector<Item,std::allocator<Item>>'에서 'Item'(으)로 변환할 수 없습니다.
+              C:\Users\user\source\repos\Nov_25_Class\Nov_25_Class\Inventory.cpp(61,17):
+              이 변환을 수행할 수 있는 사용 가능한 사용자 정의 변환 연산자가 없거나 연산자를 호출할 수 없습니다.
+      C:\Users\user\source\repos\Nov_25_Class\Nov_25_Class\Item.h(28,1):
+      또는       'Item &Item::operator =(const Item &)'
+          C:\Users\user\source\repos\Nov_25_Class\Nov_25_Class\Inventory.cpp(61,3):
+          'Item &Item::operator =(const Item &)': 인수 2을(를) 'std::vector<Item,std::allocator<Item>>'에서 'const Item &'(으)로 변환할 수 없습니다.
+              C:\Users\user\source\repos\Nov_25_Class\Nov_25_Class\Inventory.cpp(61,17):
+              원인: 'std::vector<Item,std::allocator<Item>>'에서 'const Item'(으)로 변환할 수 없습니다.
+              C:\Users\user\source\repos\Nov_25_Class\Nov_25_Class\Inventory.cpp(61,17):
+              이 변환을 수행할 수 있는 사용 가능한 사용자 정의 변환 연산자가 없거나 연산자를 호출할 수 없습니다.
+      C:\Users\user\source\repos\Nov_25_Class\Nov_25_Class\Inventory.cpp(61,3):
+      인수 목록 '(Item, std::vector<Item,std::allocator<Item>>)'을(를) 일치시키는 동안
+  
+  Item.cpp
+C:\Users\user\source\repos\Nov_25_Class\Nov_25_Class\Item.cpp(6,1): error C2059: 구문 오류: '{'
+C:\Users\user\source\repos\Nov_25_Class\Nov_25_Class\Item.cpp(5,105): error C2630: 쉼표로 구분된 목록이 있어야 하는 곳에 ';'이(가) 있습니다.
+  MasterGame.cpp
+C:\Users\user\source\repos\Nov_25_Class\Nov_25_Class\MasterGame.cpp(55,3): error C2065: 'ItemType': 선언되지 않은 식별자입니다.
+C:\Users\user\source\repos\Nov_25_Class\Nov_25_Class\MasterGame.cpp(93,1): error C2660: 'MasterGame::SetSellInventoryPage': 함수는 1개의 인수를 사용하지 않습니다.
+      C:\Users\user\source\repos\Nov_25_Class\Nov_25_Class\MasterGame.cpp(87,18):
+      'MasterGame::SetSellInventoryPage' 선언을 참조하십시오.
+      C:\Users\user\source\repos\Nov_25_Class\Nov_25_Class\MasterGame.cpp(93,1):
+      인수 목록 '(int)'을(를) 일치시키는 동안
+  
+C:\Users\user\source\repos\Nov_25_Class\Nov_25_Class\MasterGame.cpp(108,12): error C2664: 'void Player::AddItemInven(const int)': 인수 1을(를) 'Item'에서 'const int'(으)로 변환할 수 없습니다.
+      C:\Users\user\source\repos\Nov_25_Class\Nov_25_Class\MasterGame.cpp(108,25):
+      이 변환을 수행할 수 있는 사용 가능한 사용자 정의 변환 연산자가 없거나 연산자를 호출할 수 없습니다.
+      C:\Users\user\source\repos\Nov_25_Class\Nov_25_Class\Player.h(22,7):
+      'Player::AddItemInven' 선언을 참조하십시오.
+      C:\Users\user\source\repos\Nov_25_Class\Nov_25_Class\MasterGame.cpp(108,12):
+      인수 목록 '(Item)'을(를) 일치시키는 동안
+  
+  Player.cpp
+C:\Users\user\source\repos\Nov_25_Class\Nov_25_Class\Player.cpp(46,13): error C2039: 'AddItemInven': 'Inventory'의 멤버가 아닙니다.
+      C:\Users\user\source\repos\Nov_25_Class\Nov_25_Class\Inventory.h(4,7):
+      'Inventory' 선언을 참조하십시오.
+  
+  Shop.cpp
+C:\Users\user\source\repos\Nov_25_Class\Nov_25_Class\Shop.cpp(29,17): error C2065: 'item': 선언되지 않은 식별자입니다.
+C:\Users\user\source\repos\Nov_25_Class\Nov_25_Class\Shop.cpp(42,61): error C2065: 'endl': 선언되지 않은 식별자입니다.
+  코드를 생성하고 있습니다...
