@@ -20,9 +20,9 @@ Item parameters for connected to the other classes.
 Main featurers for the players. 
 
 #Classes 
-Assult : High HP, highest ATK, Slowest SPD 
-Caster : Lower HP, Support role set,  ++ Resist on the negative effects. 
-Wizard : Lowest HP, High EVD, + resist of the negative effects. 
-Rogue : Highest consist of the melee attack. +benefit in in field. 
-Striker : Multiple target attacks 
-Sensei : Hard Caster, Call the students in his/her demand, bare min. attacks.
+Assult : High HP, highest ATK, Slowest SPD /n
+Caster : Lower HP, Support role set,  ++ Resist on the negative effects. /n
+Wizard : Lowest HP, High EVD, + resist of the negative effects. /n
+Rogue : Highest consist of the melee attack. +benefit in in field. /n
+Striker : Multiple target attacks /n
+Sensei : Hard Caster, Call the students in his/her demand, bare min. attacks. /n 
