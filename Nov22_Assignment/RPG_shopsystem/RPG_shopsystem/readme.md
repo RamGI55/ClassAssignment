@@ -15,11 +15,11 @@ Main UI and features of the Inventory
 
 Item parameters for connected to the other classes. 
 
-#Player.cpp
+# Player.cpp
 
 Main featurers for the players. It contains the Hp, Mp, and Armor Hp data, 
 
-#Classes 
+# Classes 
 Assult : High HP, highest ATK, Slowest SPD 
 Caster : Lower HP, Support role set,  ++ Resist on the negative effects. 
 Wizard : Lowest HP, High EVD, + resist of the negative effects. 
