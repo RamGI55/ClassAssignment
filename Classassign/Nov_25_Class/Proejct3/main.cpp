@@ -17,5 +17,8 @@ int main()
 	s.Insert(5);
 	s.Insert(6);
 	s.Insert(7);
+	s.Delete(4);
+	s.Print();
+
 
 }

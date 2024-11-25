@@ -50,30 +50,27 @@ void sll::Insert(int num)
 void sll::Delete(int num)
 {
 	// current node pointer 
-	if (node* temp = pHead) {
+	node* Node = new node(num);
 
-		pHead = pHead->pNext; 
-		delete temp; 
-
-	}
-	else if (!pHead->pNext)
+	node* temp = pHead;
+	if (num == 1)
 	{
-		pHead = temp;
+		pHead = temp-> pNext; 
 
-		delete temp; 
+		// dump the temp. 
+		delete temp;
+		return; 
 	}
-	
-	
-	// next node -> next of next onode 
+	for (int i = 0; i < num - 2; i++)
+	{
+		temp = temp->pNext; 
+	}
+	node* temp2 = temp->pNext; 
 
-	// if next node = null ; end the loopwe 
+	temp->pNext = temp2->pNext; 
 
-	//middle 
-	
+	delete temp2; 
 
-	// connect privious noded and move next node 
-
-	// didn't find -> end 
 
 
 }
@@ -85,7 +82,7 @@ void sll::Print()
 
 	while (temp != nullptr)
 	{
-		std::cout << temp->value << ""; 
+		std::cout << temp->value << " "; 
 		temp = temp->pNext; 
 		
 	}
